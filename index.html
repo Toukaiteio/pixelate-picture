@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片像素化工具</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <main class="main-content">
+            <section class="control-panel">
+                <div class="upload-section">
+                    <label for="image-upload" class="upload-label">选择图片</label>
+                    <input type="file" id="image-upload" class="upload-input" accept="image/*">
+                </div>
+
+                <div class="pixelation-control">
+                    <label for="pixel-size" class="control-label">像素化强度</label>
+                    <div class="slider-container">
+                        <input type="range" id="pixel-size" class="pixel-slider" min="1" max="512" value="10">
+                        <input type="number" id="pixel-size-input" class="pixel-input" min="1" max="512" value="10">
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="download-image" class="btn btn-primary">下载图片</button>
+                </div>
+            </section>
+
+            <section class="image-preview">
+                <div class="image-container">
+                    <div class="image-wrapper">
+                        <img id="original-image" class="preview-image" src="" alt="原始图片">
+                        <div class="image-placeholder">请上传图片</div>
+                    </div>
+                    <div class="image-wrapper">
+                        <canvas id="pixelated-canvas" class="preview-canvas"></canvas>
+                        <div class="canvas-placeholder">像素化预览</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
