@@ -2,6 +2,10 @@
 
 This is a simple frontend project that allows users to upload images, adjust pixelation intensity, and download the processed images.
 
+## Demo
+[Demo](https://pixel.dys.asia/)
+
+
 ## Features
 
 *   Upload local image files
